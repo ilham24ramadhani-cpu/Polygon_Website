@@ -34,7 +34,7 @@ def not_found(_):
 
 if __name__ == '__main__':
     # PORT diambil dari environment (untuk hosting seperti Railway, Render, Heroku),
-    # fallback ke 5000 saat dijalankan secara lokal.
-    port = int(os.environ.get('PORT', 5000))
+    # fallback ke 8000 saat dijalankan secara lokal (port 5000 dipakai AirPlay di macOS).
+    port = int(os.environ.get('PORT', 8000))
     debug = os.environ.get('FLASK_DEBUG', '0') == '1'
     app.run(host='0.0.0.0', port=port, debug=debug)
