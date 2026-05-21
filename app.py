@@ -1,5 +1,5 @@
 import os
-from flask import Flask, send_from_directory, abort
+from flask import Flask, send_from_directory, abort  # pyright: ignore[reportMissingImports]
 
 app = Flask(__name__)
 
